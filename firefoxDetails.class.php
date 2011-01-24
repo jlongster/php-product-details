@@ -423,12 +423,12 @@
                 $_all_page_link = 'all.html';
             }
 
-            $_release_notes               = ___('Release Notes');
+            $_privacy_policy              = ___('Privacy Policy');
             $_other_systems_and_languages = ___('Other Systems and Languages');
 
             $_return = <<<HTML_RETURN
             <p class="download-other">
-                <a class="ancillaryLink" href="http://www.mozilla.com/{$locale}/firefox/{$_current_version}/releasenotes/">{$_release_notes}</a> -
+                <a class="ancillaryLink" href="http://www.mozilla.com/{$locale}/legal/privacy/firefox.html">{$_privacy_policy}</a> | 
                 <a class="ancillaryLink" href="http://www.mozilla.com/{$locale}/firefox/{$_all_page_link}">{$_other_systems_and_languages}</a>
             </p>
 HTML_RETURN;
