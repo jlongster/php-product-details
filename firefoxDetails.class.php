@@ -2,8 +2,8 @@
 
     define('LATEST_FIREFOX_VERSION', '3.6.13');
     define('LATEST_FIREFOX_RELEASED_VERSION', '3.6.13');
-    define('LATEST_FIREFOX_DEVEL_VERSION', '4.0b9');
-    define('LATEST_FIREFOX_RELEASED_DEVEL_VERSION', '4.0b9');
+    define('LATEST_FIREFOX_DEVEL_VERSION', '4.0b10');
+    define('LATEST_FIREFOX_RELEASED_DEVEL_VERSION', '4.0b10');
     define('LATEST_FIREFOX_OLDER_VERSION', '3.5.16');
 
     require_once dirname(__FILE__).'/productDetails.class.php';
@@ -44,7 +44,7 @@
          */
         var $primary_builds = array(
                 'af'    => array( LATEST_FIREFOX_OLDER_VERSION => array('Windows' => array('filesize' => 7.6), 'OS X' => array('filesize' => 17.4), 'Linux' => array('filesize' => 9.2) ),
-                                  LATEST_FIREFOX_DEVEL_VERSION       => array('Windows' => array('filesize' => 7.8), 'OS X' => array('filesize' => 19), 'Linux' => array('filesize' => 9.6) ),
+                                  LATEST_FIREFOX_DEVEL_VERSION => array('Windows' => array('filesize' => 7.8), 'OS X' => array('filesize' => 19), 'Linux' => array('filesize' => 9.6) ),
                                   LATEST_FIREFOX_VERSION       => array('Windows' => array('filesize' => 7.8), 'OS X' => array('filesize' => 19), 'Linux' => array('filesize' => 9.6) )),
 
                 'ak'    => array( //LATEST_FIREFOX_OLDER_VERSION => array('Windows' => array('filesize' => 7.6), 'OS X' => array('filesize' => 17.4), 'Linux' => array('filesize' => 9.2) ),
@@ -90,7 +90,7 @@
                                   LATEST_FIREFOX_VERSION       => array('Windows' => array('filesize' => 7.8), 'OS X' => array('filesize' => 19), 'Linux' => array('filesize' => 9.5) )),
 
                 'cy'    => array( LATEST_FIREFOX_OLDER_VERSION => array('Windows' => array('filesize' => 7.6), 'OS X' => array('filesize' => 17.4), 'Linux' => array('filesize' => 9.2) ),
-//                                LATEST_FIREFOX_DEVEL_VERSION       => array('Windows' => array('filesize' => 7.8), 'OS X' => array('filesize' => 19), 'Linux' => array('filesize' => 9.6) ),
+                                  LATEST_FIREFOX_DEVEL_VERSION => array('Windows' => array('filesize' => 7.8), 'OS X' => array('filesize' => 19), 'Linux' => array('filesize' => 9.6) ),
                                   LATEST_FIREFOX_VERSION       => array('Windows' => array('filesize' => 7.8), 'OS X' => array('filesize' => 19), 'Linux' => array('filesize' => 9.6) )),
 
                 'da'    => array( LATEST_FIREFOX_OLDER_VERSION => array('Windows' => array('filesize' => 7.6), 'OS X' => array('filesize' => 17.4), 'Linux' => array('filesize' => 9.2) ),
@@ -363,7 +363,8 @@
          * @var array
          */
         var $beta_builds = array(
-                'ast'   => array( LATEST_FIREFOX_VERSION       => array('Windows' => array('filesize' => 7.8), 'OS X' => array('filesize' => 19), 'Linux' => array('filesize' => 9.5) )),
+                'ast'   => array( LATEST_FIREFOX_VERSION       => array('Windows' => array('filesize' => 7.8), 'OS X' => array('filesize' => 19), 'Linux' => array('filesize' => 9.5) ),
+                                  LATEST_FIREFOX_DEVEL_VERSION => array('Windows' => array('filesize' => 7.8), 'OS X' => array('filesize' => 19), 'Linux' => array('filesize' => 9.6) )),
 
                 'es-CL' => array( LATEST_FIREFOX_OLDER_VERSION => array('Windows' => array('filesize' => 7.6), 'OS X' => array('filesize' => 17.4), 'Linux' => array('filesize' => 9.2) ),
                                   LATEST_FIREFOX_VERSION       => array('Windows' => array('filesize' => 7.8), 'OS X' => array('filesize' => 19), 'Linux' => array('filesize' => 9.5) )),
