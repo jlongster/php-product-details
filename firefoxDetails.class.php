@@ -318,7 +318,7 @@
                                   LATEST_FIREFOX_VERSION       => array('Windows' => array('filesize' => 7.8), 'OS X' => array('filesize' => 19), 'Linux' => array('filesize' => 9.6) )),
 
                 'sr'    => array( LATEST_FIREFOX_OLDER_VERSION => array('Windows' => array('filesize' => 7.6), 'OS X' => array('filesize' => 17.4), 'Linux' => array('filesize' => 9.2) ),
-                                  LATEST_FIREFOX_DEVEL_VERSION       => array('Windows' => array('filesize' => 8.2), 'OS X' => array('filesize' => 19), 'Linux' => array('filesize' => 11) ),
+//                                  LATEST_FIREFOX_DEVEL_VERSION       => array('Windows' => array('filesize' => 8.2), 'OS X' => array('filesize' => 19), 'Linux' => array('filesize' => 11) ),
                                   LATEST_FIREFOX_VERSION       => array('Windows' => array('filesize' => 8.9), 'OS X' => array('filesize' => 21), 'Linux' => array('filesize' => 12) )),
 
                 'sv-SE' => array( LATEST_FIREFOX_OLDER_VERSION => array('Windows' => array('filesize' => 7.6), 'OS X' => array('filesize' => 17.4), 'Linux' => array('filesize' => 9.2) ),
@@ -429,7 +429,7 @@
 
             $_return = <<<HTML_RETURN
             <p class="download-other">
-                <a class="ancillaryLink" href="http://www.mozilla.com/{$locale}/legal/privacy/firefox.html">{$_privacy_policy}</a> | 
+                <a class="ancillaryLink" href="http://www.mozilla.com/{$locale}/legal/privacy/firefox.html">{$_privacy_policy}</a> |
                 <a class="ancillaryLink" href="http://www.mozilla.com/{$locale}/firefox/{$_all_page_link}">{$_other_systems_and_languages}</a>
             </p>
 HTML_RETURN;
