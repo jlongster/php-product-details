@@ -9,7 +9,7 @@
      */
     class mobileDetails {
         const latest_version = '1.1';
-        const beta_version = '4.0b3';
+        const beta_version = '4.0b4';
         const alpha_version = '2.0a1';
         const maemo = 'maemo';
         const android = 'android';
@@ -91,9 +91,9 @@
         );
 
         static $desktop_platforms = array(
-            self::windows => 'http://ftp.mozilla.org/pub/mozilla.org/mobile/releases/4.0b3/win32-i686/fennec-4.0b3.en-US.win32.zip',
-            self::mac => 'http://ftp.mozilla.org/pub/mozilla.org/mobile/releases/4.0b3/macosx-i686/fennec-4.0b3.en-US.mac.dmg',
-            self::linux => 'http://ftp.mozilla.org/pub/mozilla.org/mobile/releases/4.0b3/linux-i686/fennec-4.0b3.en-US.linux-i686.tar.bz2',
+            self::windows => 'http://ftp.mozilla.org/pub/mozilla.org/mobile/releases/4.0b4/win32-i686/fennec-4.0b4.en-US.win32.zip',
+            self::mac => 'http://ftp.mozilla.org/pub/mozilla.org/mobile/releases/4.0b4/macosx-i686/fennec-4.0b4.en-US.mac.dmg',
+            self::linux => 'http://ftp.mozilla.org/pub/mozilla.org/mobile/releases/4.0b4/linux-i686/fennec-4.0b4.en-US.linux-i686.tar.bz2',
         );
 
         static function all_locales() {
