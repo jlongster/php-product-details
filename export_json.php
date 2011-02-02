@@ -87,3 +87,21 @@ $releases = array('major_releases', 'stability_releases', 'development_releases'
 foreach ($releases as $release) {
     writefile("mobile_history_{$release}.json", $mobh->$release);
 }
+
+// Region details
+// 
+// Use this code if you want to export the region details. We do not
+// do this automatically because it's a large JSON object and not
+// automatically included in other projects, as it slows the loading
+// time down a lot and very few pages use this.
+// - James Long
+//
+// require_once('regionDetails.class.php');
+// $rd = new regionDetails();
+// $regions = array();
+// foreach ($ld->languages as $lang => $names) {
+//     $names = $rd->getRegionNames($lang);
+//     if(!empty($names))
+//         $regions[$lang] = $names;
+// }
+// writefile("region_details.json", $regions);
