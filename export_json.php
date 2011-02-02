@@ -91,17 +91,19 @@ foreach ($releases as $release) {
 // Region details
 // 
 // Use this code if you want to export the region details. We do not
-// do this automatically because it's a large JSON object and not
-// automatically included in other projects, as it slows the loading
-// time down a lot and very few pages use this.
+// do this automatically yet because we haven't tested the Python
+// libraries which parse the json to make sure it all works.
 // - James Long
 //
 // require_once('regionDetails.class.php');
+
+// if(!file_exists(JSONDIR."regions")) {
+//     mkdir(JSONDIR."regions");
+// }
+
 // $rd = new regionDetails();
-// $regions = array();
 // foreach ($ld->languages as $lang => $names) {
 //     $names = $rd->getRegionNames($lang);
 //     if(!empty($names))
-//         $regions[$lang] = $names;
+//         writefile("regions/$lang.json", $regions);
 // }
-// writefile("region_details.json", $regions);
