@@ -89,21 +89,15 @@ foreach ($releases as $release) {
 }
 
 // Region details
-// 
-// Use this code if you want to export the region details. We do not
-// do this automatically yet because we haven't tested the Python
-// libraries which parse the json to make sure it all works.
-// - James Long
-//
-// require_once('regionDetails.class.php');
+require_once('regionDetails.class.php');
 
-// if(!file_exists(JSONDIR."regions")) {
-//     mkdir(JSONDIR."regions");
-// }
+if(!file_exists(JSONDIR."regions")) {
+    mkdir(JSONDIR."regions");
+}
 
-// $rd = new regionDetails();
-// foreach ($ld->languages as $lang => $names) {
-//     $names = $rd->getRegionNames($lang);
-//     if(!empty($names))
-//         writefile("regions/$lang.json", $names);
-// }
+$rd = new regionDetails();
+foreach ($ld->languages as $lang => $names) {
+    $names = $rd->getRegionNames($lang);
+    if(!empty($names))
+        writefile("regions/$lang.json", $names);
+}
