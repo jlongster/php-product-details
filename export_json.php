@@ -105,5 +105,5 @@ foreach ($releases as $release) {
 // foreach ($ld->languages as $lang => $names) {
 //     $names = $rd->getRegionNames($lang);
 //     if(!empty($names))
-//         writefile("regions/$lang.json", $regions);
+//         writefile("regions/$lang.json", $names);
 // }
